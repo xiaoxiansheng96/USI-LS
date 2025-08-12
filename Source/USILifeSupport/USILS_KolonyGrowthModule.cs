@@ -2,10 +2,10 @@
 {
     public class USILS_KolonyGrowthModule : PartModule
     {
-        [KSPField(guiName = "Kolony Growth", guiActive = true, guiActiveEditor = true, isPersistant = true), UI_Toggle(disabledText = "Off", enabledText = "On")]
+        [KSPField(guiName = "#LifeSupport_USILS_KolonyGrowthModule_KolonyGrowthEnabled", guiActive = true, guiActiveEditor = true, isPersistant = true), UI_Toggle(disabledText = "#LifeSupport_USILS_KolonyGrowthModule_KolonyGrowthEnabled_ToggleDisabled", enabledText = "#LifeSupport_USILS_KolonyGrowthModule_KolonyGrowthEnabled_ToggleEnabled")]
         public bool KolonyGrowthEnabled = false;
 
-        [KSPField(isPersistant = false, guiName = "Next Birthday")]
+        [KSPField(isPersistant = false, guiName = "#LifeSupport_USILS_KolonyGrowthModule_KerbabyCountdown")]
         public string KerbabyCountdown;
 
         [KSPField(isPersistant = true)]

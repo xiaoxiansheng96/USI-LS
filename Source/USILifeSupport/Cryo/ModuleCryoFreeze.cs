@@ -37,16 +37,16 @@ namespace LifeSupport.Cryo
         [KSPField(isPersistant = true)]
         public bool FirstFreeze = false;    //Was this our first time use?
 
-        [KSPField(guiName = "CryoTank Active?", guiActive = true, isPersistant = true)]
+        [KSPField(guiName = "#LifeSupport_Cryo_ModuleCryoFreezer_FreezerEngaged", guiActive = true, isPersistant = true)]
         public bool FreezerEngaged = false; //Is the freezer on?
 
-        [KSPField(guiName = "CryoTank Timer:", guiActive = true)]
+        [KSPField(guiName = "#LifeSupport_Cryo_ModuleCryoFreezer_CryoTime", guiActive = true)]
         public string CryoTime;
 
-        [KSPField(guiName = "CryoTank Stability:", guiActive = true)]
+        [KSPField(guiName = "#LifeSupport_Cryo_ModuleCryoFreezer_CryoMargin", guiActive = true)]
         public string CryoMargin;
 
-        [KSPEvent(guiActive = true, guiName = "Enter CryoFreeze", active = true)]
+        [KSPEvent(guiActive = true, guiName = "#LifeSupport_Cryo_ModuleCryoFreezer_CryoFreeze", active = true)]
         public void CryoFreeze()
         {
             ToggleFreezer(!FreezerEngaged);
